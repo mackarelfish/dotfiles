@@ -18,7 +18,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mlaursen/vim-react-snippets'
 Plug 'sheerun/vim-polyglot'
 
-Plug 'styled-components/vim-styled-components'
+Plug 'styled-components/vim-styled-components', {'branch': 'main'}
 Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
 Plug 'relastle/bluewery.vim'
