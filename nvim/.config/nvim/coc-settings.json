@@ -1,0 +1,40 @@
+{
+  "coc.preferences.hoverTarget": "float",
+  "suggest.noselect": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "java",
+    "javascriptreact",
+    "javascript",
+    "json",
+    "typescript",
+    "typescriptreact"
+  ],
+  "prettier.eslintIntegration": true,
+  "eslint.quiet": true,
+  "emmet.includeLanguages": {
+     "template": "html",
+     "htmldjango": "html"
+  },
+  "emmet.syntaxProfiles": {
+      "javascript": "jsx",
+      "javascriptreact": "jsx"
+  },
+  "emmet.priority": 200,
+  "suggest.languageSourcePriority": 90,
+  "snippets.extends": {
+     "javascriptreact": ["javascript"],
+     "typescriptreact": ["typescript"]
+  },
+  "snippets.priority": 80,
+  "suggest.removeDuplicateItems": true,
+  "codeLens.enable": true,
+  "pairs.enableCharacters": [
+      "(",
+      "[",
+      "{",
+      "'",
+      "\"",
+      "`"
+  ]
+}
