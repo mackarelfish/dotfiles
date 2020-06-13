@@ -1,4 +1,5 @@
 let NERDTreeMinimalMenu=1
+let NERDTreeMapCustomOpen="l"
 
 map <C-n> :NERDTreeToggle<CR>
 
