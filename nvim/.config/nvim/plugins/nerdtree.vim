@@ -1,5 +1,22 @@
 let NERDTreeMinimalMenu=1
 let NERDTreeMapCustomOpen="l"
+let NERDTreeDirArrowExpandable="►"
+let NERDTreeDirArrowCollapsible="▼"
+let NERDTreeShowHidden=1
+let NERDTreeBookmarksFile = "$HOME/.config/.NERDTreeBookmarks"
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "*",
+    \ "Staged"    : "",
+    \ "Untracked" : "☼",
+    \ "Renamed"   : "↪",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "💩",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
 
 map <C-n> :NERDTreeToggle<CR>
 
