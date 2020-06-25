@@ -1,0 +1,52 @@
+super + shift + r
+        pkill -USR1 -x sxhkd
+
+super + Return
+        $TERMINAL
+
+super + d
+        dmenu_run
+
+super + m
+        $TERMINAL -e ncmpcpp
+
+super + {_,shift} + w
+	{$BROWSER, $TERMINAL -e nmtui}
+
+super + grave
+	dmenuunicode
+
+super + BackSpace
+	sysact
+
+XF86MonBrightnessDown
+	xbacklight -dec 15
+
+XF86MonBrightnessUp
+	xbacklight -inc 15
+
+Print
+	maim pic-full-$(date '+%y%m%d-%H%M-%S').png
+
+# Pick screenshot type
+shift + Print
+	maimpick
+
+super + {minus,equal}
+	pulsemixer --change-volume {-,+}5; kill -44 $(pidof dwmblocks)
+
+XF86Audio{Lower,Raise}Volume
+	pulsemixer --change-volume {-,+}5; kill -44 $(pidof dwmblocks)
+
+XF86AudioMute
+	pulsemixer --toggle-mute; kill -44 $(pidof dwmblocks)
+
+super + p
+	playerctl -p playerctld play-pause && pkill -RTMIN+11 dwmblocks
+
+super + shift + p
+    playerctld shift && notify-send "Player Shifted"; pkill -RTMIN+11 dwmblocks
+
+# Changes to next/previous tracks
+super + {comma,period}
+	playerctl -p playerctld {previous,next}; pkill -RTMIN+11 dwmblocks
