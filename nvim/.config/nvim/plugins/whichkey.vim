@@ -125,7 +125,8 @@ let g:which_key_map.u = {
       \ 'n' : [':set nonumber!'          , 'line-numbers'],
       \ 'r' : [':set norelativenumber!'  , 'relative line nums'],
       \ 's' : [':let @/ = ""'            , 'remove search highlight'],
-      \ 'u' : ['viwU'                    , 'toggle caps' ]
+      \ 'u' : ['viwU'                    , 'toggle caps' ],
+      \ 'f' : [':CocCommand prettier.formatFile'                    , 'format with prettier' ]
       \ }
 
 " Register which key map

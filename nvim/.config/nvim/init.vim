@@ -22,8 +22,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'styled-components/vim-styled-components', {'branch': 'main'}
 Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
-Plug 'relastle/bluewery.vim'
-Plug 'ayu-theme/ayu-vim'
 Plug 'rainglow/vim'
 
 call plug#end()
@@ -42,7 +40,6 @@ source $HOME/.config/nvim/general/autoload.vim
 source $HOME/.config/nvim/general/settings.vim
 
 colorscheme gruvbox
-source $HOME/.config/nvim/themes/ayu.vim
 source $HOME/.config/nvim/themes/onedark.vim
 source $HOME/.config/nvim/themes/gruvbox.vim
 

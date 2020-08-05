@@ -11,6 +11,8 @@ autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 autocmd BufNewFile,BufRead *.{js} if match(getline(1),"React") >= 0 | set filetype=javascriptreact | endif
 autocmd BufNewFile,BufRead *.{ts} if match(getline(1),"React") >= 0 | set filetype=typescriptreact | endif
+autocmd BufNewFile,BufRead *.{js} if match(getline(1),"next") >= 0 | set filetype=javascriptreact | endif
+autocmd BufNewFile,BufRead *.{ts} if match(getline(1),"next") >= 0 | set filetype=typescriptreact | endif
 
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart

@@ -14,7 +14,8 @@ let g:coc_global_extensions = [
   \ 'coc-java',
   \ 'coc-json',
   \ 'coc-clangd',
-  \ 'coc-pairs'
+  \ 'coc-pairs',
+  \ 'coc-vetur'
 \]
 
 let g:coc_snippet_next="<Tab>"

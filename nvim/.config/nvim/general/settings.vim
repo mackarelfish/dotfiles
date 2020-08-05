@@ -18,12 +18,14 @@ set smarttab                            " Makes tabbing smarter will realize you
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
-set number                              " Line numbers
+" set number                              " Line numbers
+set rnu
 set showtabline=2                       " Always show tabs 
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=300                      " By default timeoutlen is 1000 ms
+set synmaxcol=120
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set undofile

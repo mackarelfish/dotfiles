@@ -1,9 +1,6 @@
 super + shift + r
         pkill -USR1 -x sxhkd && notify-send "🎉 Sxhkd refreshed sucessfuly"
 
-super + Return
-        $TERMINAL
-
 super + d
         dmenu_run
 
@@ -18,6 +15,9 @@ super + grave
 
 super + BackSpace
 	sysact
+
+super + shift + u
+    [ $(pidof xcompmgr) ] && pkill xcompmgr || setsid xcompmgr
 
 XF86MonBrightnessDown
 	xbacklight -dec 15
@@ -42,11 +42,11 @@ XF86AudioMute
 	pulsemixer --toggle-mute; kill -44 $(pidof dwmblocks)
 
 super + p
-	playerctl -p playerctld play-pause && pkill -RTMIN+11 dwmblocks
+	playerctl -p playerctld play-pause
 
 super + shift + p
-    playerctld shift && notify-send "Player Shifted"; pkill -RTMIN+11 dwmblocks
+    playerctld shift && notify-send "Player Shifted"
 
 # Changes to next/previous tracks
 super + {comma,period}
-	playerctl -p playerctld {previous,next}; pkill -RTMIN+11 dwmblocks
+	playerctl -p playerctld {previous,next}

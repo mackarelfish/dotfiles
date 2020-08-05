@@ -8,33 +8,37 @@
     "javascript",
     "json",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "vue"
   ],
   "prettier.eslintIntegration": true,
   "eslint.quiet": true,
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
+  "eslint.autoFix": false,
+  "eslint.trace.server": "verbose",
   "emmet.includeLanguages": {
-     "template": "html",
-     "htmldjango": "html"
-  },
-  "emmet.syntaxProfiles": {
-      "javascript": "jsx",
-      "javascriptreact": "jsx"
+    "template": "html",
+    "htmldjango": "html"
   },
   "emmet.priority": 200,
   "suggest.languageSourcePriority": 90,
   "snippets.extends": {
-     "javascriptreact": ["javascript"],
-     "typescriptreact": ["typescript"]
+    "javascriptreact": ["javascript"],
+    "typescriptreact": ["typescript"]
   },
   "snippets.priority": 80,
   "suggest.removeDuplicateItems": true,
   "codeLens.enable": true,
-  "pairs.enableCharacters": [
-      "(",
-      "[",
-      "{",
-      "'",
-      "\"",
-      "`"
-  ]
+  "javascript.referencesCodeLens.enable": false,
+  "typescript.referencesCodeLens.enable": false,
+  "vetur.experimental.templateInterpolationService": true,
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "vetur.format.defaultFormatter.html": "prettier",
+  "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"]
 }
